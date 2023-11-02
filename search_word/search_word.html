@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const search_word = (cadena,buscar) => {
+            const palabra = cadena.split(" ");
+            let cont = 0;
+            for(let i=0;i<palabra.length;i++){
+                if(palabra[i].toLowerCase() == buscar){
+                    cont++;
+                }
+            }
+            return "La palabra "+buscar+ " aparece "+ cont+" veces";
+        }
+        console.log(search_word("La palabra la cuantas la veces la sale","la"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

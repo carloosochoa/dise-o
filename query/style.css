@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 760px){
+    div{
+        column-count: 1;
+        text-align: justify;
+    }
+}
+@media (min-width:761px) and (max-width:1023px){
+    div{
+        column-count: 2;
+        text-align: justify;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1400px){
+    div{
+        column-count: 3;
+        text-align: justify;
+    }
+}
+@media (min-width: 1400px) {
+    div {
+        column-count: 4;
+        text-align: center;
+        width: 1400px;
+        margin: auto;
+    }
+}
+@media print {
+    div{
+        column-count: 2;
+        text-align: justify;
+    }
+}

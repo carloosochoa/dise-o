@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ejercicio 7 - Sombras CSS</title>
+    <style type="text/css" media="screen">
+        .offset {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            color: #888;
+            text-align: center;
+            margin: 1em;
+        }
+
+        .exampleboxshadow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            font-size: 20px;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+        }
+        .exampleboxshadows {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            font-size: 20px;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+        }
+        .exampleboxshadow:first-child{
+            box-shadow: -8px -8px;
+        }
+        .exampleboxshadow:nth-child(2){
+            box-shadow: -8px -8px 10px ;
+        }
+        .exampleboxshadow:nth-child(3){
+            box-shadow: -5px -5px 0px 5px;
+        }
+        .exampleboxshadow:nth-child(4){
+            box-shadow: -8px -6px 9px 10px ;
+        }
+        .exampleboxshadow:nth-child(5){
+            box-shadow: 0px 0px 5px 0px;
+        }
+        .exampleboxshadow:last-child{
+            box-shadow: 0px 0px 10px 10px;
+        }
+
+        .exampleboxshadows:first-child{
+            box-shadow: -5px -5px inset;
+        }
+        .exampleboxshadows:nth-child(2){
+            box-shadow: -5px -5px  5px inset ;
+        }
+        .exampleboxshadows:nth-child(3){
+            box-shadow: -10px -10px inset;
+        }
+        .exampleboxshadows:nth-child(4){
+            box-shadow: -10px -10px 5px inset, 0 0 5px inset;
+        }
+        .exampleboxshadows:nth-child(5){
+            box-shadow: 0px 0px 8px 3px inset;
+        }
+        .exampleboxshadows:last-child{
+            box-shadow: 0px 0px 8px 7px inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="offset">
+        <div class="exampleboxshadow">A</div>
+        <div class="exampleboxshadow">B</div>
+        <div class="exampleboxshadow">C</div>
+        <div class="exampleboxshadow">D</div>
+        <div class="exampleboxshadow">E</div>
+        <div class="exampleboxshadow">F</div>
+    </div>
+
+    <div class="offset">
+        <div class="exampleboxshadows">G</div>
+        <div class="exampleboxshadows">H</div>
+        <div class="exampleboxshadows">I</div>
+        <div class="exampleboxshadows">J</div>
+        <div class="exampleboxshadows">K</div>
+        <div class="exampleboxshadows">L</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.contenedor{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(123, 198, 199,0.8);
+    font-family: sans-serif;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}

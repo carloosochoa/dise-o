@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truncate</title>
+    <script>
+        const truncate = (cadena,long,final) =>{
+            if(long=null){
+                long = 60;
+            }
+            if(final == null){
+                final = "...";
+            }
+
+            if(cadena.length > long){
+                return cadena.substring(0,long - final.length) + final;
+            }else{
+                return cadena;
+            }
+        }
+        console.log(truncate("We are doing JS string exercises."));
+        console.log(truncate("We are doing JS string exercises.",19));
+        console.log(truncate("We are doing JS string exercises.",15,"!!"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

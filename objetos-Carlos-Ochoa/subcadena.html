@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substring</title>
+    <script>
+        const lorgestSubstring = (cadena1,cadena2) =>{
+            let i=0;
+            let masLargo=0;
+            substring = "";
+
+            while(cadena1[i]==cadena2[i] ){
+                substring += cadena1[i];
+                i++;
+            }
+            return substring;
+        }
+
+        console.log(lorgestSubstring("goooooo","gooogle"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

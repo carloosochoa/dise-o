@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 10px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.padre {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    height: max-content;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.cuerpo {
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    height: 30px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}

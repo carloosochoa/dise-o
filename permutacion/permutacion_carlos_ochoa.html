@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let lista = [1,2,3,4,5,6,7,8,9];
+        const permutar = (vector) =>{
+            if(vector.length == 2){
+                return [[vector[0],vector[1]],[vector[1],vector[0]]];
+            }
+            else{
+                let permutaciones = [];
+
+                for(let i=0; i<vector.length;i++){
+                    let vector2;
+                    vector2 = [...vector];
+                    vector2.splice(i,1);
+                    resto = permutar(vector2);
+                    permutaciones = permutaciones.concat(resto.map((valor)=>{valor.unshift(vector[i]);return valor;}));
+                }
+                return permutaciones;
+            }
+
+        }
+        console.log(permutar(lista));
+
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(210, 207, 207);
+}
+
+header,main,nav,footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    height: 150px;
+}
+.contenedor , .navegacion,.contenedor_main,.contenedor_footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(79, 78, 74);
+    margin-top: 15px;
+    padding: 5px;
+    color: orangered;
+    border-radius: 30px 30px;
+    border: 4px solid white;
+}
+
+
+.contenedor_main{
+    display: grid;
+    color: black;
+
+}
+
+header img{
+    width: 100px;
+}
+.login, .logo{
+    border-radius: 50%;
+}
+
+.izquierda , .titulo, .imagenes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lupa{
+    width: 15px;
+}
+
+
+
+.navegacion{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.nav_izquierda, .centro{
+    display: flex;
+
+}
+.nav_izquierda{
+    width: 30%;
+    align-self: flex-start;
+}
+.centro>img{
+    margin-left: 4px;
+}
+
+
+.contenedor_footer{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+.columna h3{
+    border-bottom: 1px solid orangered;
+}
+.columna ul{
+    list-style: none;
+}
+.columna li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

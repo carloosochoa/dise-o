@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 5px;
+}
+
+.sidebar {
+    background-color: #6ca5c2;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    border-right: 1px solid gray;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    background-color:rgba(193, 219, 210, 1.00) ;
+}
+

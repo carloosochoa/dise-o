@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .contenedor{
+        width: 100vw;
+        height: 400px;
+        display: grid;
+        grid-template-areas: "izq centro derecha"
+                             "izq abajo abajo";
+        grid-gap: 20px;
+        margin: 5px;
+        font-family: sans-serif;
+    }
+    #hijo{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .contenido{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        font-size: large;
+    }
+    .elemento1{
+        grid-area: izq;
+        background-image: url('img/banner-img1.jpg');
+
+    }
+    .elemento2{
+        grid-area: centro;
+        background-image: url('img/banner-img2.jpg');
+    }
+    .elemento3{
+        grid-area: derecha;
+        background-image: url('img/banner-img3.jpg');
+    }
+    .elemento4{
+        grid-area: abajo;
+        background-image: url('img/banner-img4.jpg');
+    }
+    h3{
+        color: rgb(255, 204, 0);
+        font-size: xx-large;
+    }
+    p{
+        color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(200, 250, 0);
+        width: max-content;
+        padding: 3px 15px;
+        margin-top: 10px;
+    }
+
+</style>
+<body>
+    <div class="contenedor">
+        <div class="elemento1" id="hijo">
+            <div class="contenido">
+                <h3>HAMMER DRILLS</h3>
+                <p>MORE POWER TO YOU</p>
+                <a href="">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="elemento2" id="hijo">
+            <div class="contenido">
+                <h3>THE BEST JUST</h3>
+                <p>GOT BETTER</p>
+                <a href="">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="elemento3" id="hijo">
+            <div class="contenido">
+                <h3>LITHIUM-ION</h3>
+                <p>CORDLESS TOOLS</p>
+                <a href="">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="elemento4" id="hijo">
+            <div class="contenido">
+                <h3>SATISFACTION</h3>
+                <p>100% GUARANTEED</p>
+                <a href="">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

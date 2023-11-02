@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda binaria</title>
+    <script>
+        let array = [1,2,3,4,5,6,7,8,9];
+        const binarySearch = (item,num) =>{
+            let primero = 0;
+            let ultimo = item.length - 1;
+            let index_medio =parseInt(((ultimo + primero)/2).toFixed(0));
+            while(item[index_medio]!= num && primero<ultimo)
+            {
+            if(num < item[index_medio]){
+                ultimo = index_medio - 1;
+            }else if(num > item[index_medio]){
+                primero = index_medio + 1;
+            }
+            index_medio = ((ultimo + primero)/2).toFixed(0);
+            }
+            if(item[index_medio] == num){
+                return index_medio;
+            }
+                return -1;
+        }
+
+            
+        console.log(binarySearch(array,7));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

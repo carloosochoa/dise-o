@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    gap: 2px;
+    padding: 12px 24px;
+    height: 100vh;
+}
+
+.lateral {
+    background-color: #6ca5c2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.lateral p {
+    text-transform: uppercase;
+}
+
+.principal {
+    background-color: rgba(193, 219, 210, 1.00); 
+    flex: 4; 
+    padding: 12px 24px;
+}
+
+h1 {
+    font-size: 24px;
+}

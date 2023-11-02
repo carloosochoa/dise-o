@@ -1,0 +1,16 @@
+.columnas {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap:5px;
+    width: 100%;
+    
+}
+
+.columnas li {
+
+    background-color: rgba(123, 198, 199, 0.8);
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const truncate_words = (cadena,num) => {
+            let array = cadena.split(" ");
+            let valor = ""
+            for(let i=0;i<num;i++){
+                valor += array[i] + " "; 
+            }
+            return valor;
+        }
+        console.log(truncate_words("Hola que tal estas",0));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

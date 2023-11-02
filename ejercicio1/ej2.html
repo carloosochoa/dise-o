@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            width: 70vh;
+            height: 20vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 1em;
+            background-color: #333333;
+            width: 200px;
+            height: 150px;
+        }
+        div:first-child{
+            border-bottom-right-radius: 4em;
+        }
+        div:nth-of-type(2){
+            border-bottom-right-radius: 60px 30px;
+        }
+        div:nth-of-type(3){
+            border-bottom-right-radius: 30px 70px;
+        }
+        div:nth-of-type(4){
+            border-radius: 20px 100px;
+        }
+        div:nth-of-type(5){
+            border-top-left-radius: 40px 15px;
+            border-top-right-radius: 20px 40px;
+            border-bottom-left-radius: 15px 40px;
+            border-bottom-right-radius: 40px 20px;
+        }
+        div:last-of-type{
+            margin-left: 3em;
+            margin-top: 3em;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+    <div>F</div>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.contenedor{
+    display: inline-flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background-color: rgb(123, 198, 199,0.8);
+}

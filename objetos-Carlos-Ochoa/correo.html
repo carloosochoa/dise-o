@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <script>
+        const protectEmail = (cadena) => {
+            array = cadena.split("@");
+            cadena = array[0].charAt(0)+ array[0].charAt(1);
+            if (array[0].length<=3){
+                return array[0].charAt(0) + "...@" + array[1];
+                
+            }
+            else{
+                return  cadena + "...@" + array[1];
+            }
+        }
+
+        console.log(protectEmail("carlos@gamil.com"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
